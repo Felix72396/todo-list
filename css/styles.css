@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: start center;
+}
+
+section.container{
+    width: 500px;
+    height: auto;
+    padding: 1rem;
+}
+
+
+
+section.container > div:first-child{
+    width: 100%;
+    height: 50px;
+    border: 1px #fff solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.container > div > input{
+    padding: 5px;
+    display: block;
+    height: 100%;
+    width: 85%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    color: #fff;
+}
+
+section.container > div > button{
+    padding: 12px;
+    display: block;
+    height: 100%;
+    width: 15%;
+    border: 1px #fff solid;
+    background-color: rgb(32, 170, 32);
+    color: #ffffff;
+    transition: 1s all;
+}
+
+div#to-do-list-container{
+    height: auto;
+}
+
+div.task-container{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 0;
+    border: 1px #fff solid;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div.task-container :is(input, p){
+    font-size: 12px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0;
+    width: 78%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+div.task-container input[type="text"]{
+    color: rgb(179, 255, 0);
+}
+
+div.task-container button{
+    padding: 5px;
+    margin-right: 5px;
+    display: block;
+    height: 100%;
+    width: 12%;
+    font-size: 12px;
+    border: 1px #fff solid;
+    background-color: rgb(231, 138, 203);
+    color: #ffffff;
+}
+
+
+div.task-container button.delete{
+    background-color: rgb(239, 82, 77);
+}
+
+button{
+    opacity: .6;
+    transition: .5s all;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
